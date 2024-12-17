@@ -1,0 +1,77 @@
+/* إعدادات الخطوط */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(to right, #3a3a3a, #111111); /* خلفية متدرجة داكنة */
+    margin: 0;
+    padding: 20px;
+    direction: rtl; /* تعديل اتجاه النصوص للعربية */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #f2f2ec;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid gold; /* إضافة حدود ذهبية */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: gold; /* تغيير لون النص إلى الذهبي */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #000000; 
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid gold; /* حدود ذهبية للحقول */
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #FFD700; /* تغيير لون الحدود عند التركيز إلى الذهبي الفاتح */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: gold; /* لون خلفية ذهبي للأزرار */
+    color: #111111; /* لون النص الداكن للأزرار */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #FFD700; /* تغيير لون الخلفية عند التمرير إلى الذهبي الفاتح */
+}
+
+/* تحسين الشكل العام */
+input[type="text"], input[type="tel"], input[type="date"], input[type="time"], textarea {
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="date"]:focus, input[type="time"]:focus, textarea:focus {
+    border-color: gold; /* حدود ذهبية عند التركيز */
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    outline: none;
+}
